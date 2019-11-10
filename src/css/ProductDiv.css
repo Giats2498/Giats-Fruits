@@ -1,0 +1,147 @@
+.productdiv{
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: table;
+    table-layout: fixed;
+    width: 100vw;
+}
+.productdiv-container{
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+}
+.productdiv-container-center-info{
+    max-width: 1290px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.productdiv-container-center-info h3{
+    color: #726442;
+    font-family: 'Gotham-Book';
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.productdiv-container-center-info h1{
+    color: #fff;
+    font-family: 'LarishSemiBold';
+    margin-bottom: 55px;
+    margin-top: -19px;
+    font-size: 160px;
+}
+.productdiv-container-center-info p{
+    color: #fff;
+    font-family: 'Gotham-Book';
+    margin-bottom: 30px;
+    max-width: 358px;
+    line-height: 1.3em;
+    font-size: 18px;
+}
+.angelle{
+    background-image: url('../images/angelle.jpg');
+}
+.yellow-baby-plum{
+    background-image: url('../images/yellow-baby-plum.jpg');
+}
+.orange-baby-plum{
+    background-image: url('../images/orange-baby-plum.jpg');
+}
+.kumato{
+    background-image: url('../images/kumato.jpg');
+}
+.mini-kumato{
+    background-image: url('../images/mini-kumato.jpg');
+}
+
+.striped-lemon{
+    background-image: url('../images/striped-lemon.jpg');
+}
+.pink-lemon{
+    background-image: url('../images/pink-lemon.jpg');
+}
+.limequat{
+    background-image: url('../images/limequat.jpg');
+}
+.kumquat{
+    background-image: url('../images/kumquat.jpg');
+}
+
+.watermelon{
+    background-image: url('../images/watermelon.jpg');
+}
+
+
+@media (max-width: 1460px){
+    .productdiv-container-center-info{
+        max-width: 990px;
+    }
+    .productdiv-container-center-info h3{
+        font-size: 14px;
+    }
+    .productdiv-container-center-info h1{
+        font-size: 90px!important;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .productdiv-container-center-info p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1100px){
+    .productdiv-container-center-info{
+        max-width: 790px;
+    }
+}
+@media (max-width: 640px){
+    .productdiv-container-center-info{
+        margin-bottom: 120px;
+    }
+    .productdiv-container{
+        vertical-align: bottom;
+    }
+    .productdiv-container-center-info h3{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .productdiv-container-center-info h1{
+        font-size: 60px!important;
+        margin-bottom: 25px;
+    }
+    .productdiv-container-center-info p{
+        font-size: 16px;
+    }
+    .angelle{
+        background-image: url('../images/angelle-mobile.jpg');
+    }
+    .yellow-baby-plum{
+        background-image: url('../images/yellow-baby-plum-mobile.jpg');
+    }
+    .orange-baby-plum{
+        background-image: url('../images/orange-baby-plum-mobile.jpg');
+    }
+    .kumato{
+        background-image: url('../images/kumato-mobile.jpg');
+    }
+    .mini-kumato{
+        background-image: url('../images/mini-kumato-mobile.jpg');
+    }
+    
+    .striped-lemon{
+        background-image: url('../images/striped-lemon-mobile.jpg');
+    }
+    .pink-lemon{
+        background-image: url('../images/pink-lemon-mobile.jpg');
+    }
+    .limequat{
+        background-image: url('../images/limequat-mobile.jpg');
+    }
+    .kumquat{
+        background-image: url('../images/kumquat-mobile.jpg');
+    }
+    
+    .watermelon{
+        background-image: url('../images/watermelon-mobile.jpg');
+    }
+}

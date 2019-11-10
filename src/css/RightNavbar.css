@@ -1,0 +1,121 @@
+@keyframes animationleft {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes trackbar {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, 15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-100%, 0px);
+    }
+}
+.rightnavbar{
+    right: 0px;
+    animation: animationleft 0.8s ease forwards;
+    transition-delay: 2.4s!important;
+    animation-delay: 2.4s!important;
+    opacity: 0;
+    position: fixed;
+    top: 100px;
+    bottom: 50px;
+    z-index:10;
+    overflow: hidden;
+    width: 175px;
+    padding: 20px 0px;
+}
+.rightnavbar-track{
+    position: absolute;
+    right: 10px!important;
+    top: 50px;
+    bottom: 0px;
+    margin: 0px 0px;
+}
+.rightnavbar-track-bar{
+    transition: top 1.3s ease;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    background: #7f7451;
+    width: 10px;
+    height: 125px;
+}
+.track-upper{
+    position: absolute;
+    left: 29px;
+    top: -2000px;
+    bottom: 100%;
+    width: 1px;
+    background-color: #fff;
+}
+.track-lower{
+    position: absolute;
+    left: 29px;
+    top: 100%;
+    bottom: -2000px;
+    width: 1px;
+    background-color: #fff;
+}
+.rightnavbar-track-bar-info{
+    animation: trackbar 0.8s ease forwards;
+    transition-delay: 3s!important;
+    animation-delay: 3s!important;
+    opacity: 0;
+    float: left;
+    padding-right: 20px;
+    height: 100%;
+    min-height: 100%;
+    margin-top: -20px;
+    width: 160px;
+    text-align: right;
+}
+.rightnavbar-track-bar-info-selected{
+    color: #7f7451;
+    display: block;
+    transition: color .5s linear;
+    font-family: 'Gotham-Book';
+    margin-bottom: 5px;
+    text-decoration: none!important;
+    font-size: 14px;
+}
+.rightnavbar-track-bar-info-selected:hover{
+    cursor: pointer;
+}
+.rightnavbar-track-bar-info-notselected{
+    font-size: 14px;
+    display: block;
+    text-decoration: none!important;
+    color: #515050;
+    font-family: 'Gotham-Book';
+    margin-bottom: 5px;
+    transition: color .5s linear;
+}
+.rightnavbar-track-bar-info-notselected:hover{
+    color: #7f7451;
+    cursor: pointer;
+    transition: color 0.5s ease 0s!important;
+}
+
+@media(max-width:1000px){
+    .rightnavbar-track-bar-info-selected{
+        font-size: 12px;
+    }
+    .rightnavbar-track-bar-info-notselected{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 640px){
+    .rightnavbar {
+       display: none!important;
+    }
+}

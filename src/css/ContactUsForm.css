@@ -1,0 +1,224 @@
+@keyframes fadeouttop {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.form{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+.form-margin{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.form-margin-container{
+    margin: 0;
+    padding: 0;
+}
+.form-row{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-firstcol{
+    margin-right: 10px;
+    width: calc(50% - 10px);
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.form-col-data{
+    animation: fadeouttop 1.5s ease forwards;
+    opacity: 0;
+}
+.form-col-data span{
+    position: relative;
+}
+.form-col-data input{
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 40px !important;
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #726442;
+    outline: none;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'LarishSemiBold';
+    transition: color .5s cubic-bezier(.22,.68,0,1.71);
+    padding: 3px;
+    line-height: 1.5;
+    margin: 0;
+    overflow: visible;
+}
+.alert{
+    font-size: 13px;
+    font-family: 'Gotham-Book';
+    position: absolute;
+    top:-34px;
+    display: block;
+    color: #fff;
+}
+.checkbox-alert{
+    left:-15px;
+    top:15px;
+    float:left;
+    font-size: 13px;
+    font-family: 'Gotham-Book';
+    position: absolute;
+    display: block;
+    color: #fff;
+}
+.form-col-data-checkbox{
+    position: relative;
+    float: left;
+}
+.form-col-data-checkbox span{
+    margin-left: 0px!important;
+    display: inline-block;
+    margin: 0 0 0 1em;
+}
+.form-col-data-checkbox input{
+    max-width: 420px;
+    width: 15px!important;
+    height: 15px!important;
+    float: left;
+    margin-bottom: 0px!important;
+    box-sizing: border-box;
+    padding: 0;
+    color: #404040;
+}
+.i-have-read{
+    float: left;
+    margin-left: 12px;
+    font-size: 13px;
+    color: #86754d;
+    font-family: 'Gotham-Book';
+}
+.i-have-read a{
+    color: #86754d;
+    text-decoration: none;
+}
+.form-secondcol{
+    margin-left: 10px;
+    width: calc(50% - 10px);
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.form-button{
+    animation:fadeouttop 1.5s ease forwards !important;
+    animation-delay: 2.5s !important;
+    opacity: 0;
+    max-width: 38px!important;
+    width: auto;
+    background: none;
+    color: #fff!important;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0px;
+    font-family: 'Gotham-Medium';
+    font-size: 13px!important;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    outline: none!important;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.form-button:after{
+    bottom: -6px;
+    transform: scaleY(1);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #7f7451;
+}
+.info{
+    animation:fadeouttop 1.5s ease forwards;
+    opacity: 0;
+    font-size: 11px;
+    color: #695f5f;
+    font-family: 'Gotham-Book';
+    margin-top: 35px;
+    line-height: 1.3em;
+  
+    float: left;
+}
+.form-col-data textarea{
+    height: 223%;
+    resize: vertical;
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #726442;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 35px;
+    color: #ccc;
+    font-family: 'LarishSemiBold';
+    transition: color .5s cubic-bezier(.22,.68,0,1.71);
+    width: 100%;
+    padding: 3px;
+    margin: 0;
+    overflow: auto;
+    line-height: 1.5;
+}
+.textarea-alert{
+    font-size: 13px;
+    font-family: 'Gotham-Book';
+    position: absolute;
+    
+    display: block;
+    color: #fff;
+}
+@media (max-width: 1460px){
+    .form-margin{
+        max-width: 990px;
+    }
+    .form-col-data textarea{
+        font-size: 26px;
+        height: 245%;
+    }
+    .form-col-data input{
+        font-size: 26px;
+    }
+}
+@media (max-width: 1100px){
+    .form-margin{
+        max-width: 800px;
+    }
+}
+@media (max-width: 640px){
+    .form-firstcol{
+        width: 100%;
+        margin-top:35px;
+        margin-right: 0;
+    }
+    .form-secondcol{
+        margin-top:35px;
+        width: 100%;
+        margin-left:0;
+    }
+    .form-col-data input,textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+    .form{
+        display: flex;
+        vertical-align: initial;
+        position: relative;
+        margin-top: 145px;
+        padding-bottom: 90px;
+    }
+}

@@ -1,0 +1,6 @@
+.fullpage-wrapper{
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    display: block;
+}
